@@ -7,7 +7,6 @@ import sk.euba.fhi.tajj.jdbc.entity.*;
 
 import java.util.*;
 
-
 public class AppClass {
 
     private static ServiceDao questionsDao = new ServiceDaoImpl();
