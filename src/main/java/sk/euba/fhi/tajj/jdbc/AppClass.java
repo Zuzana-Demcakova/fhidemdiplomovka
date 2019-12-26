@@ -14,6 +14,7 @@ public class AppClass {
 
     public static void main(String[] args) {
         Pippo pippo = new Pippo();
+        pippo.getServer().getSettings().port(8080);
         pippo.addPublicResourceRoute(); // "/public/..."
 
         pippo.GET("/", routeContext -> {
