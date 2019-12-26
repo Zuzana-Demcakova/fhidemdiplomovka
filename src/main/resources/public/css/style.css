@@ -1,0 +1,117 @@
+body {
+    background-color: #eeeeee;
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+}
+
+
+#footer {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    font-size: 12px;
+    font-family: Verdana, sans-serif;
+    box-shadow: 0 0 5px #00214B;
+    padding-bottom: 3px;
+}
+
+.s1_submit_button {
+    font-family: Verdana, serif;
+    padding: 2px 40px;
+    font-size: 15px;
+    border-radius: 4px;
+    margin: 8px 0px 2px;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    background-color: #633580;
+    color: white;
+    border: 2px solid white;
+}
+
+.s1_submit_button:hover {
+    background-color: transparent;
+    color: black;
+}
+
+.s1_question {
+    border: none;
+    margin-top: 5px;
+
+    -webkit-transition-duration: 0.2s;
+    transition-duration: 0.2s;
+}
+
+.s1_question:hover {
+    background-color: #f5f5f5;
+}
+
+.s1_question_title {
+    font-size: 15px;
+}
+
+.s1_question_answer {
+    height: 20px;
+}
+
+.s1_test_form {
+    padding-top: 15px;
+    font-family: Verdana, sans-serif;
+    font-size: 12px;
+}
+
+.student-login {
+    font-family: Verdana, serif;
+    font-size: 12px;
+}
+
+.s1_login_body {
+    padding-top: 50px;
+}
+
+.s1_login_form {
+    font-family: Verdana, serif;
+    padding-top: 5px;
+}
+
+.s1_text_input {
+    width: 250px;
+    font-size: 15px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #555555;
+    text-align: left;
+    padding: 5px;
+}
+
+tr:nth-child(even) {
+    background-color: #baa9c5;
+}
+
+.head_part {
+    text-align: center;
+    width: 400px;
+    margin: auto;
+}
+
+.logo_fhi {
+    width: 150px;
+}
+
+.diploma_title {
+    font-family: Verdana, serif;
+    font-size: medium;
+    margin-top: 15px;
+}
+
+.s2-question-title {
+    padding-top: 30px;
+}
