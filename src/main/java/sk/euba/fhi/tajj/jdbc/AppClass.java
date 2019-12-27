@@ -10,7 +10,7 @@ import java.util.*;
 public class AppClass {
 
     private static ServiceDao questionsDao = new ServiceDaoImpl();
-    private static String MASTER_KEY = "1";
+    private static String MASTER_KEY = "demcakova_iman5";
 
     public static void main(String[] args) {
         Pippo pippo = new Pippo();
