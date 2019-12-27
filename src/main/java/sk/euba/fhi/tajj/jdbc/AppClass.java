@@ -10,6 +10,7 @@ import java.util.*;
 public class AppClass {
 
     private static ServiceDao questionsDao = new ServiceDaoImpl();
+    private static String MASTER_KEY = "1";
 
     public static void main(String[] args) {
         Pippo pippo = new Pippo();
@@ -83,17 +84,24 @@ public class AppClass {
             String masterKey = routeContext.getParameter("masterKey").toString();
             System.out.println("masterKey" + masterKey);
 
-            if ("1".equals(masterKey)) {
+            if (MASTER_KEY.equals(masterKey)) {
                 System.out.println("OK master key");
-                routeContext.redirect("/s2/results");
+                routeContext.redirect("/s2/results?masterKey="+masterKey);
             } else {
                 routeContext.redirect("/s2/invalid");
             }
         });
 
         pippo.GET("/s2/results", routeContext -> {
-            Map<String, Object> resultsView = generateView();
-            routeContext.render("s2_results", resultsView);
+            String masterKey = routeContext.getParameter("masterKey").toString();
+
+            if (MASTER_KEY.equals(masterKey)) {
+                Map<String, Object> resultsView = generateView();
+                routeContext.render("s2_results", resultsView);
+            } else {
+                routeContext.redirect("/s2/invalid");
+            }
+
         });
 
 
